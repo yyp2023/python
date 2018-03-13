@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<body>
+
+<table class="table">
+      {% for user in user_list %}
+          <tr>
+            <td>{{ user }}</td>
+          </tr>
+
+    {% endfor %}
+</table>
+<div>
+    {{ pager_str |safe }}
+{#    如果直接使用{{ pager_str }} 只会显示一个字符串，这是因为安全设置，直接使用管道 "|safe"告诉浏览器是安全的即可#}
+</div>
+
+
+
+</body>
+</html>
