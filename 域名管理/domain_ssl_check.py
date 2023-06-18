@@ -66,18 +66,3 @@ if __name__ == '__main__':
                 print(get_ssl_certificate(domain))
                 result = str(get_ssl_certificate(domain)) + "\n"
                 file.write(result)
-
-            # domain_list.append(domain_q)
-
-    # with open('domain_result.txt','a') as file:
-    #     for domain_i in domain_list:
-    #         domain = domain_i + yuming
-    #         print(get_ssl_certificate(domain))
-    #         file.write(get_ssl_certificate(domain))
-    #
-
-
-
-
-# get_ssl_expire_date(domain)
-
